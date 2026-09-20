@@ -97,8 +97,6 @@
       "CSV processing",
       "Google Sheets",
       "Data standardization",
-      "Java",
-      "Spring Boot",
       "REST APIs",
       "SQL",
       "Business software"
@@ -169,12 +167,12 @@
         "id": "customer-data-cleaning",
         "title": "Customer Data Cleaning & Standardization",
         "category": "Data Cleaning",
-        "projectType": "Self-initiated demo project",
+        "projectType": "Independent portfolio project",
         "status": "completed",
         "featured": true,
         "shortDescription": "Cleaned and standardized a sample customer workbook of about 5,250 records.",
         "description": "A portfolio exercise based on a messy customer workbook covering duplicate removal, capitalization, phone/email/date standardization, missing-data checks and a final quality summary.",
-        "disclosure": "This is a self-initiated demo project built on a sample dataset. It is not client work.",
+        "disclosure": "This is an independent portfolio project built on a sample dataset. It is not client work.",
         "problem": "The raw workbook contained repeated records, inconsistent text and phone formats, mixed date formats, invalid emails and missing information.",
         "objective": "Turn the raw workbook into one consistent dataset that is easier to filter, summarize and reuse, while clearly identifying problem records.",
         "workPerformed": [
