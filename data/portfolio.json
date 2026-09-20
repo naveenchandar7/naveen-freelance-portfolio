@@ -2,7 +2,7 @@
   "site": {
     "name": "Naveen",
     "title": "Naveen — Freelance Developer & Data Specialist",
-    "description": "Freelance data operations, backend APIs and business software. Excel and CSV data cleaning today, Java and Spring Boot backend development as the technical portfolio grows.",
+    "description": "Freelance data operations, backend APIs and business software focused on clear requirements, reliable implementation and checked delivery.",
     "url": "https://naveen-freelance-portfolio.vercel.app/",
     "language": "en",
     "locale": "en_US",
@@ -312,14 +312,13 @@
         "tools": [
           "Backend Development",
           "REST APIs",
-          "SQL",
-          "MySQL"
+          "Data Integration",
+          "Business Logic"
         ],
         "tags": [
           "Backend",
-          "REST API",
-          "SQL",
-          "MySQL",
+          "APIs",
+          "Data Integration",
           "Business Logic"
         ],
         "results": [
