@@ -681,3 +681,60 @@ body, #app { color: var(--ink) !important; }
 }
 .contact__closing-spacer{display:block!important}
 .contact__backtop{justify-self:end!important}
+
+
+/* Paint the hero gradient on the actual letter spans so the second line is visible everywhere. */
+.hero__name-accent .char__in{
+  background:linear-gradient(120deg,#00c8ff 0%,#2e9bff 45%,#7b3ff2 100%)!important;
+  -webkit-background-clip:text!important;
+  background-clip:text!important;
+  -webkit-text-fill-color:transparent!important;
+  color:transparent!important;
+}
+.hero__name-first .char__in{
+  color:#f1f5f9!important;
+  -webkit-text-fill-color:#f1f5f9!important;
+}
+
+/* Compact mobile canvas so the looping sorter cannot trap horizontal scrolling. */
+@media (max-width:899px){
+  .hero__visual,
+  .sorter{min-width:0!important;max-width:100%!important;width:100%!important}
+  .sorter__frame{width:100%!important}
+  .sorter__grid{grid-auto-rows:clamp(1.55rem,5vw,2rem)!important}
+  .sorter__controls{gap:.5rem!important}
+  .stage{font-size:.7rem!important}
+}
+
+/* Closing contact buttons: distinct compact treatment for email / Upwork / GitHub / Fiverr. */
+.contact__closing-actions{
+  display:grid!important;
+  grid-template-columns:repeat(2,minmax(120px,1fr))!important;
+  max-width:360px!important;
+}
+.contact__closing-btn{
+  min-height:44px!important;
+  padding:.68rem .85rem!important;
+  border-radius:12px!important;
+  justify-content:space-between!important;
+  font-size:.75rem!important;
+  letter-spacing:.01em!important;
+}
+.contact__closing-btn--primary{
+  background:linear-gradient(135deg,#f8fafc,#dbeafe)!important;
+  color:#06101a!important;
+  border-color:#dbeafe!important;
+}
+.contact__closing-btn--ghost{
+  background:rgba(14,18,32,.6)!important;
+  color:#bcc7d7!important;
+  border-color:rgba(99,179,237,.22)!important;
+}
+.contact__closing-btn--ghost:hover{
+  background:rgba(0,212,255,.06)!important;
+  border-color:rgba(0,212,255,.45)!important;
+  color:#00d4ff!important;
+}
+@media (max-width:760px){
+  .contact__closing-actions{grid-template-columns:1fr 1fr!important;max-width:320px!important}
+}
