@@ -649,3 +649,35 @@ body, #app { color: var(--ink) !important; }
   .contact__closing-links{justify-content:flex-start!important}
   .contact__backtop{justify-self:start!important}
 }
+
+
+/* Hero identity treatment matching the reference portfolio. */
+.hero__name{
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:flex-start!important;
+  max-width:none!important;
+  gap:0!important;
+}
+.hero__name-first,.hero__name-accent{display:block!important}
+.hero__name-first{color:#f1f5f9!important}
+.hero__name-accent{
+  background:linear-gradient(120deg,#00c8ff 0%,#2e9bff 45%,#7b3ff2 100%)!important;
+  -webkit-background-clip:text!important;
+  background-clip:text!important;
+  -webkit-text-fill-color:transparent!important;
+  color:transparent!important;
+}
+.hero__name .chars{display:inline-block!important}
+.hero.hero--active .hero__name-first .char__in,
+.hero.hero--active .hero__name-accent .char__in{
+  animation:rise .95s var(--ease) both;
+  animation-delay:calc(var(--ci,0)*48ms + 100ms);
+}
+
+/* Footer row: copyright left, back-to-top right, no marketplace links in the center. */
+.contact__closing-bar{
+  grid-template-columns:1fr auto 1fr!important;
+}
+.contact__closing-spacer{display:block!important}
+.contact__backtop{justify-self:end!important}
