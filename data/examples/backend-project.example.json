@@ -1,0 +1,72 @@
+{
+  "_note": "TEMPLATE ONLY. This file is not loaded by the site. Copy the object below into projects.items in data/portfolio.json when the project is really finished, replace every TODO, and remove this _note. Use status \"draft\" while you are still building it so it stays hidden.",
+  "id": "business-management-system",
+  "title": "Business Management System",
+  "category": "Backend Development",
+  "projectType": "Personal project",
+  "status": "draft",
+  "featured": true,
+  "shortDescription": "TODO: one sentence about what the system does.",
+  "description": "TODO: two or three sentences for the top of the case study.",
+  "disclosure": "TODO: say honestly what this is (personal project, demo, or client work).",
+  "problem": "TODO: what problem does the system solve?",
+  "objective": "TODO: what did you set out to build?",
+  "workPerformed": [
+    "TODO: REST API design",
+    "TODO: Authentication",
+    "TODO: SQL database schema",
+    "TODO: Dashboard"
+  ],
+  "process": [
+    {
+      "title": "TODO: Plan the data model",
+      "description": "TODO"
+    },
+    {
+      "title": "TODO: Build the API",
+      "description": "TODO"
+    }
+  ],
+  "tools": [
+    "Java",
+    "Spring Boot",
+    "SQL",
+    "REST API"
+  ],
+  "tags": [
+    "Java",
+    "Spring Boot",
+    "REST API",
+    "Authentication"
+  ],
+  "results": [
+    "TODO: only real outcomes"
+  ],
+  "metrics": [],
+  "images": {
+    "thumbnail": {
+      "src": "assets/projects/business-management-system/thumbnail.webp",
+      "alt": "TODO: describe the image",
+      "width": 1600,
+      "height": 1000
+    },
+    "summary": {
+      "src": "assets/projects/business-management-system/dashboard.webp",
+      "alt": "TODO: describe the image",
+      "width": 1600,
+      "height": 900
+    }
+  },
+  "gallery": [
+    {
+      "src": "assets/projects/business-management-system/login.webp",
+      "alt": "TODO",
+      "caption": "TODO",
+      "width": 1600,
+      "height": 900
+    }
+  ],
+  "demoVideoUrl": "",
+  "githubUrl": "https://github.com/YOUR-USERNAME/business-management-system",
+  "liveDemoUrl": ""
+}

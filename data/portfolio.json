@@ -1,0 +1,424 @@
+{
+  "site": {
+    "name": "Naveen",
+    "title": "Naveen — Data Operations & Data Cleaning",
+    "description": "Freelance data operations and data cleaning: Excel and CSV cleaning, Google Sheets processing and reporting, and PDF, CSV and Excel data conversion.",
+    "url": "https://your-domain.vercel.app/",
+    "language": "en",
+    "locale": "en_US",
+    "themeColor": "#f8fafc",
+    "ogImage": "assets/og-image.png",
+    "ogImageAlt": "Naveen — Data Operations and Data Cleaning"
+  },
+  "sectionOrder": [
+    "hero",
+    "services",
+    "projects",
+    "process",
+    "skills",
+    "testimonials",
+    "experience",
+    "about",
+    "contact"
+  ],
+  "navigation": {
+    "brand": {
+      "label": "Naveen",
+      "target": "#top"
+    },
+    "items": [
+      {
+        "label": "Services",
+        "target": "#services"
+      },
+      {
+        "label": "Projects",
+        "target": "#projects"
+      },
+      {
+        "label": "How I work",
+        "target": "#process"
+      },
+      {
+        "label": "Tools",
+        "target": "#skills"
+      },
+      {
+        "label": "About",
+        "target": "#about"
+      }
+    ],
+    "cta": {
+      "label": "Contact",
+      "target": "#contact"
+    }
+  },
+  "hero": {
+    "headline": "Naveen",
+    "title": "Data Operations & Data Cleaning",
+    "text": "I help businesses clean, organize and prepare their data for reliable use.",
+    "primaryCta": {
+      "label": "View Projects",
+      "target": "#projects"
+    },
+    "secondaryCta": {
+      "label": "Contact Me",
+      "target": "#contact"
+    },
+    "visual": {
+      "enabled": true,
+      "title": "Animation of scattered, messy data cells being organized into a clean, consistent table",
+      "columns": 5,
+      "rows": 8,
+      "seed": 11,
+      "stageDuration": 1600,
+      "replayLabel": "Replay",
+      "stageGroupLabel": "Cleaning stages",
+      "caption": "Illustration only. No real data is shown.",
+      "stages": [
+        {
+          "label": "Raw",
+          "caption": "Mixed formats, repeated records and gaps."
+        },
+        {
+          "label": "Clean",
+          "caption": "Every field follows one format."
+        },
+        {
+          "label": "Validate",
+          "caption": "Duplicates removed, invalid entries checked."
+        },
+        {
+          "label": "Deliver",
+          "caption": "A clean, structured, usable result."
+        }
+      ]
+    },
+    "ticker": [
+      "Excel cleaning",
+      "CSV processing",
+      "Google Sheets reporting",
+      "Duplicate removal",
+      "Standardization",
+      "Missing value checks",
+      "PDF to Excel",
+      "Format conversion"
+    ]
+  },
+  "services": {
+    "heading": "Services",
+    "intro": "Spreadsheets and data files often need work before anyone can trust them. These are the three things I do.",
+    "items": [
+      {
+        "id": "excel-csv-cleaning",
+        "title": "Excel / CSV Data Cleaning",
+        "description": "Turn messy spreadsheets and exports into consistent, reliable datasets.",
+        "icon": "table",
+        "features": [
+          "Remove duplicates",
+          "Standardize fields",
+          "Identify missing data",
+          "Normalize formatting",
+          "Prepare clean datasets"
+        ]
+      },
+      {
+        "id": "google-sheets-processing",
+        "title": "Google Sheets Data Processing & Reporting",
+        "description": "Organize data in Google Sheets and prepare clear summaries you can act on.",
+        "icon": "chart",
+        "features": [
+          "Organize and structure raw sheet data",
+          "Clean and standardize columns",
+          "Build summary tables and reports",
+          "Prepare data for sharing with your team"
+        ]
+      },
+      {
+        "id": "data-conversion",
+        "title": "PDF / CSV / Excel Data Conversion & Organization",
+        "description": "Move data between formats and organize it into a structure that is ready to use.",
+        "icon": "convert",
+        "features": [
+          "Convert PDF tables to Excel or CSV",
+          "Convert between CSV and Excel formats",
+          "Organize converted data into clean columns",
+          "Check the result against the source"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "heading": "Projects",
+    "intro": "Each case study shows the raw data, the work done and the final result. Every project is labeled by type, so you always know whether it is client work or a self-initiated demo.",
+    "showOnlyFeatured": false,
+    "items": [
+      {
+        "id": "customer-data-cleaning",
+        "title": "Customer Data Cleaning & Standardization",
+        "category": "Data Cleaning",
+        "projectType": "Self-initiated demo project",
+        "status": "completed",
+        "featured": true,
+        "shortDescription": "Cleaned and standardized a sample customer dataset of about 5,250 records.",
+        "description": "Cleaned and standardized a sample customer dataset containing approximately 5,250 records.",
+        "disclosure": "This is a self-initiated demo project built on a sample dataset. It is not client work.",
+        "problem": "Raw customer data is rarely ready to use. Records repeat, names, phone numbers, cities and dates follow different formats, and some emails or values are invalid or missing. That makes the data hard to filter, count or report on.",
+        "objective": "Turn the raw file into one consistent dataset that can be filtered, summarized and reused, with every problem record clearly identified.",
+        "workPerformed": [
+          "Duplicate removal",
+          "Name standardization",
+          "Phone standardization",
+          "Email normalization",
+          "Invalid email identification",
+          "Missing value identification",
+          "City standardization",
+          "Date standardization",
+          "Data status classification",
+          "Summary reporting"
+        ],
+        "process": [
+          {
+            "title": "Review the raw file",
+            "description": "Look through the raw data to find the formatting problems, repeated records and gaps."
+          },
+          {
+            "title": "Standardize the fields",
+            "description": "Make names, phone numbers, emails, cities and dates follow one consistent format."
+          },
+          {
+            "title": "Identify problem records",
+            "description": "Find duplicates, invalid emails and missing values."
+          },
+          {
+            "title": "Classify and summarize",
+            "description": "Add a Data_Status value to each record and report the summary metrics."
+          }
+        ],
+        "tools": [
+          "Microsoft Excel"
+        ],
+        "tags": [
+          "Excel",
+          "Data cleaning",
+          "Standardization",
+          "Deduplication",
+          "Reporting"
+        ],
+        "results": [
+          "A cleaned customer dataset with standardized names, phone numbers, emails, cities and dates",
+          "Duplicate records removed",
+          "Invalid emails and missing values identified",
+          "A Data_Status value for every record",
+          "A summary of the cleaning metrics"
+        ],
+        "metrics": [
+          {
+            "label": "Customer records",
+            "value": "~5,250"
+          }
+        ],
+        "images": {
+          "thumbnail": {
+            "src": "assets/projects/customer-data-cleaning/thumbnail-placeholder.svg",
+            "alt": "Preview of the cleaned customer dataset in a spreadsheet",
+            "width": 1600,
+            "height": 1000
+          },
+          "before": {
+            "src": "assets/projects/customer-data-cleaning/raw-placeholder.svg",
+            "alt": "Raw customer data before cleaning, with inconsistent formatting",
+            "width": 1600,
+            "height": 900,
+            "blur": true
+          },
+          "after": {
+            "src": "assets/projects/customer-data-cleaning/cleaned-placeholder.svg",
+            "alt": "Cleaned customer data with standardized fields and a Data_Status column",
+            "width": 1600,
+            "height": 900
+          },
+          "summary": {
+            "src": "assets/projects/customer-data-cleaning/summary-placeholder.svg",
+            "alt": "Summary sheet with the cleaning metrics",
+            "width": 1600,
+            "height": 900
+          }
+        },
+        "gallery": [],
+        "demoVideoUrl": "",
+        "githubUrl": "",
+        "liveDemoUrl": ""
+      }
+    ]
+  },
+  "process": {
+    "heading": "How I work",
+    "intro": "A simple process that keeps the work predictable and easy to check.",
+    "steps": [
+      {
+        "title": "Understand",
+        "description": "Understand the client's file and requirements."
+      },
+      {
+        "title": "Clean",
+        "description": "Standardize, organize and process the data."
+      },
+      {
+        "title": "Validate",
+        "description": "Check duplicates, missing values and invalid information."
+      },
+      {
+        "title": "Deliver",
+        "description": "Provide a clean, structured and usable final result."
+      }
+    ]
+  },
+  "skills": {
+    "heading": "Tools and skills",
+    "intro": "What I use for data work today.",
+    "items": [
+      {
+        "name": "Microsoft Excel",
+        "group": "Tools"
+      },
+      {
+        "name": "Google Sheets",
+        "group": "Tools"
+      },
+      {
+        "name": "CSV Data Processing",
+        "group": "Tools"
+      },
+      {
+        "name": "Data Cleaning",
+        "group": "Data work"
+      },
+      {
+        "name": "Data Standardization",
+        "group": "Data work"
+      },
+      {
+        "name": "Data Reporting",
+        "group": "Data work"
+      }
+    ]
+  },
+  "testimonials": {
+    "heading": "Client feedback",
+    "intro": "",
+    "items": []
+  },
+  "experience": {
+    "heading": "Experience",
+    "intro": "",
+    "items": []
+  },
+  "about": {
+    "heading": "About",
+    "paragraphs": [
+      "I'm Naveen, an aspiring software developer and freelance data operations specialist. I work on data cleaning, organization and business-ready reporting while continuing to build deeper expertise in backend development with Java and Spring Boot."
+    ],
+    "facts": [],
+    "image": {
+      "src": "",
+      "alt": ""
+    }
+  },
+  "contact": {
+    "heading": "Contact",
+    "intro": "Send me the file you need cleaned, or describe what it looks like and what you need to do with it. I'll reply with how I would approach it.",
+    "email": "your-email@example.com",
+    "emailButtonLabel": "Send an email",
+    "emailSubject": "Data cleaning project"
+  },
+  "social": [
+    {
+      "id": "upwork",
+      "label": "Upwork",
+      "url": "https://www.upwork.com/freelancers/~017933f57f6a273739",
+      "handle": "View my profile",
+      "showInContact": true,
+      "showInFooter": true
+    },
+    {
+      "id": "fiverr",
+      "label": "Fiverr",
+      "url": "",
+      "handle": "View my gigs",
+      "showInContact": false,
+      "showInFooter": false
+    },
+    {
+      "id": "linkedin",
+      "label": "LinkedIn",
+      "url": "",
+      "handle": "Connect with me",
+      "showInContact": false,
+      "showInFooter": false
+    },
+    {
+      "id": "github",
+      "label": "GitHub",
+      "url": "https://github.com/naveenchandar7",
+      "handle": "See my code",
+      "showInContact": true,
+      "showInFooter": true
+    }
+  ],
+  "footer": {
+    "text": "© {year} Naveen"
+  },
+  "labels": {
+    "skipToContent": "Skip to content",
+    "nav.label": "Main",
+    "nav.openMenu": "Open menu",
+    "nav.closeMenu": "Close menu",
+    "projects.filterLabel": "Filter projects by category",
+    "projects.all": "All",
+    "projects.empty": "No projects to show yet.",
+    "projects.showing": "Showing {count} projects",
+    "projects.viewCaseStudy": "View case study",
+    "projects.type": "Project type",
+    "status.in-progress": "In progress",
+    "status.completed": "Completed",
+    "case.back": "Back to projects",
+    "case.type": "Project type",
+    "case.category": "Category",
+    "case.status": "Status",
+    "case.tools": "Tools used",
+    "case.tags": "Tags",
+    "case.beforeAfter": "Raw data to final data",
+    "case.raw": "Raw data",
+    "case.masked": "Personal values masked",
+    "case.cleaning": "Cleaning",
+    "case.cleaned": "Final data",
+    "case.viewSideBySide": "Side by side",
+    "case.viewSlider": "Slider",
+    "case.viewLabel": "Comparison view",
+    "case.sliderLabel": "Drag to compare raw and final data",
+    "case.openFull": "Open full size",
+    "case.problem": "Problem",
+    "case.objective": "Objective",
+    "case.work": "Work performed",
+    "case.process": "Process",
+    "case.results": "Results",
+    "case.metrics": "Key figures",
+    "case.summary": "Summary",
+    "case.gallery": "More images",
+    "case.video": "Watch demo video",
+    "case.liveDemo": "Live demo",
+    "case.github": "View on GitHub",
+    "case.pager": "More projects",
+    "case.previous": "Previous project",
+    "case.next": "Next project",
+    "case.notFoundTitle": "Project not found",
+    "case.notFoundText": "This project does not exist or is not published yet.",
+    "contact.email": "Email",
+    "contact.other": "Elsewhere",
+    "footer.backToTop": "Back to top",
+    "error.title": "The portfolio could not load its content.",
+    "error.hint": "If you opened index.html directly from a folder, start a local server instead. The README explains how.",
+    "services.cta": "Discuss this service"
+  }
+}

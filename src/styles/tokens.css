@@ -1,0 +1,38 @@
+/* Design tokens. Change colors, fonts and radii here and the whole site follows. */
+:root {
+  color-scheme: light;
+
+  --bg: #fbfcfe;
+  --bg-2: #f2f5f9;
+  --surface: #ffffff;
+  --surface-2: #eef2f7;
+  --ink: #151922;
+  --ink-2: #505b6b;
+  --muted: #778397;
+  --line: rgba(21, 25, 34, 0.10);
+  --line-strong: rgba(21, 25, 34, 0.18);
+
+  --accent: #2d57d9;
+  --accent-hover: #2148c6;
+  --accent-ink: #ffffff;
+  --accent-soft: rgba(45, 87, 217, 0.08);
+  --accent-rgb: 45, 87, 217;
+  --mint: #0a8f73;
+  --mint-soft: rgba(10, 143, 115, 0.10);
+  --mint-rgb: 10, 143, 115;
+  --pill: #d9e0e8;
+
+  --font-display: 'Space Grotesk', 'Segoe UI', system-ui, sans-serif;
+  --font-body: 'Manrope', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+
+  --r-sm: 7px;
+  --r-md: 14px;
+  --r-lg: 22px;
+
+  --container: 1180px;
+  --gutter: clamp(1.1rem, 3vw, 2.35rem);
+  --nav-h: 76px;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --shadow-lift: 0 24px 60px -34px rgba(15, 23, 42, 0.28);
+}

@@ -1,0 +1,210 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--nav-h) + 12px);
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 400 1rem/1.7 var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  text-wrap: balance;
+}
+p {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  color: inherit;
+}
+button {
+  font: inherit;
+  color: inherit;
+}
+main:focus {
+  outline: none;
+}
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+::selection {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+.container {
+  width: 100%;
+  max-width: calc(var(--container) + var(--gutter) * 2);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 100;
+  padding: 0.6rem 1rem;
+  border-radius: var(--r-md);
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-weight: 600;
+  text-decoration: none;
+  transform: translateY(-200%);
+}
+.skip-link:focus {
+  transform: none;
+}
+
+.icon {
+  display: inline-flex;
+  flex: none;
+}
+.icon svg {
+  width: 1.25em;
+  height: 1.25em;
+}
+
+/* scroll progress bar */
+.progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 80;
+  height: 3px;
+  pointer-events: none;
+}
+.progress__bar {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--mint));
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.fatal {
+  max-width: 40rem;
+  margin: 20vh auto 0;
+  padding: 0 var(--gutter);
+}
+.fatal h1 {
+  margin-bottom: 0.75rem;
+  font-size: 1.75rem;
+}
+.fatal p {
+  color: var(--ink-2);
+}
+
+/* ---- motion ---------------------------------------------------------- */
+
+/* Scroll reveal replays whenever an element leaves and re-enters the viewport. */
+[data-reveal] {
+  --reveal: opacity 0.62s var(--ease) calc(var(--i, 0) * 70ms), translate 0.62s var(--ease) calc(var(--i, 0) * 70ms);
+  opacity: 0;
+  translate: 0 18px;
+  transition: var(--reveal);
+}
+[data-reveal].is-visible {
+  opacity: 1;
+  translate: 0 0;
+}
+
+.section__head[data-reveal] {
+  opacity: 1;
+  translate: none;
+  transition: none;
+}
+
+[data-enter] {
+  animation: enter 0.78s var(--ease) both;
+  animation-delay: calc(var(--e, 0) * 65ms + 80ms);
+}
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+}
+
+.view-enter {
+  animation: view-in 0.4s var(--ease);
+}
+@keyframes view-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    animation-delay: 0ms !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+  }
+  [data-reveal] {
+    opacity: 1;
+    translate: none;
+  }
+  .mask__in {
+    transform: none !important;
+  }
+  .section__intro {
+    opacity: 1 !important;
+    translate: none !important;
+  }
+}
