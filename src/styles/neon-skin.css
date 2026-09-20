@@ -738,3 +738,56 @@ body, #app { color: var(--ink) !important; }
 @media (max-width:760px){
   .contact__closing-actions{grid-template-columns:1fr 1fr!important;max-width:320px!important}
 }
+
+
+/* Mobile navigation / horizontal overflow guard. */
+html,body{
+  max-width:100%;
+  overflow-x:hidden!important;
+}
+.nav{
+  width:100%;
+  max-width:100%;
+}
+.nav .container{
+  max-width:100%;
+}
+.nav__inner{
+  width:100%;
+  min-width:0!important;
+}
+@media (max-width:859px){
+  .nav{
+    padding-top:.35rem!important;
+  }
+  .nav__inner{
+    min-height:54px!important;
+    padding-left:.85rem!important;
+    padding-right:.45rem!important;
+    border-radius:18px!important;
+  }
+  .nav__brand{
+    min-width:0!important;
+    flex:1 1 auto!important;
+  }
+  .nav__brand{
+    font-size:1rem!important;
+  }
+  .nav__toggle{
+    flex:0 0 44px!important;
+  }
+  .nav__panel{
+    width:100%!important;
+    max-width:100%!important;
+    left:0!important;
+    right:0!important;
+    overflow:hidden!important;
+  }
+  .nav__list{
+    width:100%!important;
+    min-width:0!important;
+  }
+  .nav__link{
+    max-width:100%!important;
+  }
+}
