@@ -480,3 +480,17 @@ body, #app { color: var(--ink) !important; }
 @media (max-width:760px){
   .about__facts-grid,.contact__list{grid-template-columns:1fr!important}
 }
+
+
+/* Restore the original oversized Naveen footer treatment. */
+.footer__mark{
+  margin-top:1.5rem!important;
+  margin-bottom:-0.14em!important;
+  color:transparent!important;
+  font:800 clamp(4.5rem,21vw,16rem)/.85 var(--font-display)!important;
+  letter-spacing:-.06em!important;
+  text-align:center!important;
+  white-space:nowrap!important;
+  -webkit-text-stroke:1px rgba(99,179,237,.12)!important;
+  user-select:none!important;
+}
