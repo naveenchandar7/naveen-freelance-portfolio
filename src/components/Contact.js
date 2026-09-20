@@ -10,9 +10,10 @@ export function mailtoUrl(contact) {
 export function renderContact(data) {
   const cfg = data.contact;
   const hasEmail = has(cfg.email);
+  const upwork = (data.social || []).find((item) => item.id === 'upwork' && has(item.url));
   const github = (data.social || []).find((item) => item.id === 'github' && has(item.url));
 
-  if (!hasEmail && !github) return null;
+  if (!hasEmail && !upwork && !github) return null;
 
   return section(
     'contact',
@@ -48,6 +49,14 @@ export function renderContact(data) {
                 { class: 'contact__closing-btn contact__closing-btn--primary', href: mailtoUrl(cfg) },
                 h('span', {}, 'Email me'),
                 icon('arrow-up-right')
+              )
+            : null,
+          upwork
+            ? h(
+                'a',
+                { class: 'contact__closing-btn contact__closing-btn--ghost', href: upwork.url, ...externalAttrs(upwork.url) },
+                h('span', {}, 'Upwork'),
+                icon('external')
               )
             : null,
           github
