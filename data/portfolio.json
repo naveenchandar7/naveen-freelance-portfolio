@@ -451,8 +451,8 @@
     }
   },
   "contact": {
-    "heading": "Let's work together.",
-    "intro": "Share the file, workflow, API requirement or software idea. Include the expected result and constraints, and I'll reply with the next step.",
+    "heading": "Have a messy dataset? Let’s clean it up.",
+    "intro": "Send me the task, expected output and any rules you need followed. I’ll review the requirement and work toward a clean, structured result.",
     "email": "naveenchandar021@gmail.com",
     "emailButtonLabel": "Email",
     "emailSubject": "Freelance project inquiry"
@@ -469,7 +469,7 @@
     {
       "id": "fiverr",
       "label": "Fiverr",
-      "url": "",
+      "url": "https://www.fiverr.com/",
       "handle": "View my gigs",
       "showInContact": false,
       "showInFooter": false
