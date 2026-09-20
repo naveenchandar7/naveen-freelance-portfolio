@@ -52,7 +52,7 @@
     }
   },
   "hero": {
-    "headline": "Naveen",
+    "headline": "Naveen Chandar S",
     "title": "Freelance Developer & Data Specialist",
     "text": "I turn messy data into reliable deliverables and build practical backend solutions that businesses can use.",
     "primaryCta": {
@@ -98,7 +98,6 @@
       "Google Sheets",
       "Data standardization",
       "REST APIs",
-      "SQL",
       "Business software"
     ]
   },
@@ -401,19 +400,19 @@
         "group": "Data work"
       },
       {
-        "name": "Java",
+        "name": "Backend Development",
         "group": "Backend"
       },
       {
-        "name": "Spring Boot",
+        "name": "API Development",
         "group": "Backend"
       },
       {
-        "name": "REST APIs",
+        "name": "Database Integration",
         "group": "Backend"
       },
       {
-        "name": "SQL / MySQL",
+        "name": "Business Logic",
         "group": "Backend"
       }
     ]
@@ -429,24 +428,22 @@
     "items": []
   },
   "about": {
-    "heading": "Reliable work, clear delivery.",
+    "heading": "A practical approach to every project.",
     "paragraphs": [
-      "I'm Naveen, a freelance developer working across data operations and software development. I take ownership from understanding the requirement through validation and final delivery.",
-      "I handle data cleaning and organization with a focus on consistency, accuracy and business-ready outputs. I also build backend and API solutions with structured logic, data access and clear interfaces.",
-      "I keep the workflow practical: understand the requirement, build carefully, validate the result and deliver what was agreed."
+      "I take ownership from requirement to delivery, with clear scope, careful implementation and a checked final result."
     ],
     "facts": [
       {
         "label": "Focus",
-        "value": "Data work + software development"
+        "value": "Data work + software"
       },
       {
-        "label": "Strength",
-        "value": "Structured implementation + validation"
+        "label": "Approach",
+        "value": "Structured implementation"
       },
       {
         "label": "Delivery",
-        "value": "Clear scope · checked output"
+        "value": "Validated handover"
       }
     ],
     "image": {
