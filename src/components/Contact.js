@@ -43,9 +43,14 @@ export function renderContact(data) {
       hasEmail
         ? h(
             'a',
-            { class: 'contact__mail', href: mailtoUrl(cfg) },
+            { class: 'contact__mail', href: mailtoUrl(cfg), 'aria-label': `${cfg.emailButtonLabel || label('contact.email')}: ${cfg.email}` },
             h('span', { class: 'contact__cta' }, cfg.emailButtonLabel || label('contact.email')),
-            h('span', { class: 'contact__address' }, cfg.email, icon('arrow-right'))
+            h(
+              'span',
+              { class: 'contact__email-card' },
+              h('span', { class: 'contact__email-address' }, cfg.email),
+              icon('arrow-right')
+            )
           )
         : null,
       rows.length ? h('ul', { class: 'contact__list', role: 'list', 'aria-label': label('contact.other') }, rows) : null
