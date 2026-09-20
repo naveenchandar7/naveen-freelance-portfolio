@@ -12,8 +12,9 @@ export function renderContact(data) {
   const hasEmail = has(cfg.email);
   const upwork = (data.social || []).find((item) => item.id === 'upwork' && has(item.url));
   const github = (data.social || []).find((item) => item.id === 'github' && has(item.url));
+  const fiverr = (data.social || []).find((item) => item.id === 'fiverr' && has(item.url));
 
-  if (!hasEmail && !upwork && !github) return null;
+  if (!hasEmail && !upwork && !github && !fiverr) return null;
 
   return section(
     'contact',
@@ -64,6 +65,14 @@ export function renderContact(data) {
                 'a',
                 { class: 'contact__closing-btn contact__closing-btn--ghost', href: github.url, ...externalAttrs(github.url) },
                 h('span', {}, 'GitHub'),
+                icon('external')
+              )
+            : null,
+          fiverr
+            ? h(
+                'a',
+                { class: 'contact__closing-btn contact__closing-btn--ghost', href: fiverr.url, ...externalAttrs(fiverr.url) },
+                h('span', {}, 'Fiverr'),
                 icon('external')
               )
             : null
