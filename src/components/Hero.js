@@ -17,6 +17,9 @@ function ctaButton(cta, variant = '') {
 export function renderHero(data) {
   const hero = data.hero;
   const showVisual = hero.visual && hero.visual.enabled;
+  const nameParts = String(hero.headline || 'Naveen').trim().split(/s+/);
+  const firstName = nameParts.shift() || 'Naveen';
+  const restName = nameParts.join(' ');
 
   return h(
     'section',
@@ -31,8 +34,10 @@ export function renderHero(data) {
         h(
           'h1',
           { class: 'hero__title', id: 'hero-title' },
-          h('span', { class: 'hero__name' }, splitChars(hero.headline)),
-          ' ',
+          h('span', { class: 'hero__name' },
+            h('span', { class: 'hero__name-first' }, splitChars(firstName)),
+            restName ? h('span', { class: 'hero__name-accent' }, splitChars(restName)) : null
+          ),
           h('span', { class: 'hero__role', 'data-enter': '', style: '--e:9' }, hero.title)
         ),
         has(hero.text) ? h('p', { class: 'hero__text', 'data-enter': '', style: '--e:11' }, hero.text) : null,
