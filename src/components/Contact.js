@@ -1,12 +1,6 @@
 import { h, has, externalAttrs } from '../utils/dom.js';
 import { icon } from '../utils/icons.js';
-import { label } from '../store.js';
 import { section } from './SectionHeader.js';
-
-export function contactLinks(data, where) {
-  const flag = where === 'footer' ? 'showInFooter' : 'showInContact';
-  return (data.social || []).filter((item) => has(item.url) && item[flag] !== false);
-}
 
 export function mailtoUrl(contact) {
   const subject = has(contact.emailSubject) ? `?subject=${encodeURIComponent(contact.emailSubject)}` : '';
@@ -16,11 +10,9 @@ export function mailtoUrl(contact) {
 export function renderContact(data) {
   const cfg = data.contact;
   const hasEmail = has(cfg.email);
-  const social = (data.social || []).filter((item) => has(item.url) && ['upwork', 'fiverr', 'github'].includes(item.id));
-  if (!hasEmail && !social.length) return null;
+  const github = (data.social || []).find((item) => item.id === 'github' && has(item.url));
 
-  const mainLinks = social.filter((item) => item.id !== 'fiverr');
-  const miniLinks = social.filter((item) => item.id === 'upwork' || item.id === 'fiverr');
+  if (!hasEmail && !github) return null;
 
   return section(
     'contact',
@@ -58,31 +50,21 @@ export function renderContact(data) {
                 icon('arrow-up-right')
               )
             : null,
-          mainLinks.map((item) =>
-            h(
-              'a',
-              { class: 'contact__closing-btn contact__closing-btn--ghost', href: item.url, ...externalAttrs(item.url) },
-              h('span', {}, item.label),
-              icon('external')
-            )
-          )
+          github
+            ? h(
+                'a',
+                { class: 'contact__closing-btn contact__closing-btn--ghost', href: github.url, ...externalAttrs(github.url) },
+                h('span', {}, 'GitHub'),
+                icon('external')
+              )
+            : null
         )
       ),
       h(
         'div',
         { class: 'contact__closing-bar' },
         h('span', {}, `© ${new Date().getFullYear()} Naveen`),
-        h(
-          'div',
-          { class: 'contact__closing-links' },
-          miniLinks.map((item) =>
-            h(
-              'a',
-              { href: item.url, ...externalAttrs(item.url) },
-              item.label
-            )
-          )
-        ),
+        h('span', { class: 'contact__closing-spacer', 'aria-hidden': 'true' }),
         h(
           'a',
           { href: '#top', class: 'contact__backtop' },
