@@ -110,6 +110,7 @@ export function renderHeroSorter(cfg) {
     root.classList.remove('is-manual');
     show(0);
     for (let i = 1; i <= last; i++) timers.push(setTimeout(() => show(i), i * duration));
+    timers.push(setTimeout(play, (last + 1) * duration));
   }
 
   if (reduce) {
