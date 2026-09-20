@@ -94,8 +94,7 @@ async function init() {
     h('a', { class: 'skip-link', href: '#main' }, label('skipToContent')),
     progress,
     nav.el,
-    h('main', { id: 'main', tabindex: '-1' }, homeView, caseView),
-    renderFooter(data)
+    h('main', { id: 'main', tabindex: '-1' }, homeView, caseView)
   );
 
   initReveal(homeView);
