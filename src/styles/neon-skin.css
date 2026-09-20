@@ -350,3 +350,133 @@ body, #app { color: var(--ink) !important; }
   font-size:clamp(3rem,10vw,7rem)!important;
   -webkit-text-stroke:1px rgba(99,179,237,.08)!important;
 }
+
+/* ---- reference hero name: white first line + cyan/purple second line */
+.hero__name{
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:flex-start!important;
+  max-width:none!important;
+  gap:0!important;
+}
+.hero__name-first,
+.hero__name-accent{display:block!important}
+.hero__name-first{color:var(--white)!important}
+.hero__name-accent{
+  background:linear-gradient(135deg,#00d4ff 0%,#3d9cff 45%,#7c3aed 100%)!important;
+  -webkit-background-clip:text!important;
+  background-clip:text!important;
+  -webkit-text-fill-color:transparent!important;
+  color:transparent!important;
+}
+.hero.hero--active .hero__name-first .char__in,
+.hero.hero--active .hero__name-accent .char__in{
+  animation:rise .95s var(--ease) both;
+  animation-delay:calc(var(--ci,0)*48ms + 100ms);
+}
+
+/* ---- About: compact and visual instead of a long text wall */
+.about--compact{
+  display:grid!important;
+  gap:1.25rem!important;
+  max-width:900px!important;
+}
+.about__statement{
+  display:grid!important;
+  grid-template-columns:3px minmax(0,1fr)!important;
+  gap:1rem!important;
+  align-items:stretch!important;
+  max-width:780px!important;
+}
+.about__accent{
+  border-radius:999px!important;
+  min-height:100%!important;
+  background:linear-gradient(180deg,var(--accent),#7c3aed)!important;
+  box-shadow:0 0 16px rgba(0,212,255,.16)!important;
+}
+.about__lead{
+  margin:0!important;
+  color:#dbe4f0!important;
+  font-size:clamp(1rem,1.45vw,1.18rem)!important;
+  line-height:1.7!important;
+  max-width:62ch!important;
+}
+.about__facts-grid{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:.75rem!important;
+}
+.about__fact-card{
+  padding:1rem 1.05rem!important;
+  min-height:96px!important;
+  border:1px solid rgba(99,179,237,.14)!important;
+  border-radius:12px!important;
+  background:linear-gradient(180deg,rgba(14,18,32,.92),rgba(10,15,30,.82))!important;
+  transition:transform .25s var(--ease),border-color .25s,box-shadow .25s!important;
+}
+.about__fact-card:hover{
+  transform:translateY(-3px)!important;
+  border-color:rgba(99,179,237,.34)!important;
+  box-shadow:0 14px 28px rgba(0,0,0,.18)!important;
+}
+.about__fact-label{
+  display:block!important;
+  margin-bottom:.45rem!important;
+  color:#6f7c90!important;
+  font:500 .66rem/1.2 var(--font-mono)!important;
+  letter-spacing:.13em!important;
+  text-transform:uppercase!important;
+}
+.about__fact-value{
+  display:block!important;
+  color:#dbe4f0!important;
+  font-size:.9rem!important;
+  line-height:1.45!important;
+}
+
+/* ---- Footer links: tiny utility pills; keep the large Naveen mark intact */
+.footer__links{gap:.4rem!important}
+.footer__links li a{
+  display:inline-flex!important;
+  align-items:center!important;
+  padding:.28rem .56rem!important;
+  border:1px solid rgba(99,179,237,.14)!important;
+  border-radius:999px!important;
+  background:rgba(14,18,32,.68)!important;
+  color:#7f8ea3!important;
+  font-size:.64rem!important;
+  line-height:1!important;
+  transition:all .2s var(--ease)!important;
+}
+.footer__links li a:hover{
+  color:var(--accent)!important;
+  border-color:rgba(0,212,255,.35)!important;
+  background:rgba(0,212,255,.05)!important;
+  transform:translateY(-2px)!important;
+}
+.footer__text,.footer__top{font-size:.68rem!important}
+
+/* Contact network links: compact cards rather than large visual blocks */
+.contact__list{
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:.65rem!important;
+  max-width:760px!important;
+}
+.contact-row{
+  min-height:62px!important;
+  padding:.78rem .95rem!important;
+}
+.contact-row__label{
+  font-size:.64rem!important;
+  letter-spacing:.11em!important;
+  text-transform:uppercase!important;
+}
+.contact-row__value{font-size:.8rem!important}
+.contact__email-card{
+  max-width:620px!important;
+  padding:.78rem .92rem!important;
+}
+.contact__email-address{font:600 .82rem/1.35 var(--font-mono)!important}
+@media (max-width:760px){
+  .about__facts-grid,.contact__list{grid-template-columns:1fr!important}
+}
