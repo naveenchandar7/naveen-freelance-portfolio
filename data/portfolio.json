@@ -1,156 +1,92 @@
 {
   "site": {
     "name": "Naveen",
-    "title": "Naveen — Data Operations & Data Cleaning",
-    "description": "Freelance data operations and data cleaning: Excel and CSV cleaning, Google Sheets processing and reporting, and PDF, CSV and Excel data conversion.",
-    "url": "https://naveen-freelance-portfolio-qqzg8c8sd-naveenchandar7s-projects.vercel.app/",
+    "title": "Naveen — Freelance Developer & Data Specialist",
+    "description": "Freelance data operations, backend APIs and business software. Excel and CSV data cleaning today, Java and Spring Boot backend development as the technical portfolio grows.",
+    "url": "https://naveen-freelance-portfolio.vercel.app/",
     "language": "en",
     "locale": "en_US",
     "themeColor": "#060912",
     "ogImage": "assets/og-image.png",
-    "ogImageAlt": "Naveen — Data Operations and Data Cleaning"
+    "ogImageAlt": "Naveen — Freelance Developer & Data Specialist"
   },
-  "sectionOrder": [
-    "hero",
-    "services",
-    "projects",
-    "process",
-    "skills",
-    "testimonials",
-    "experience",
-    "about",
-    "contact"
-  ],
+  "sectionOrder": ["hero", "services", "projects", "process", "skills", "about", "contact"],
   "navigation": {
-    "brand": {
-      "label": "Naveen",
-      "target": "#top"
-    },
+    "brand": {"label": "Naveen", "target": "#top"},
     "items": [
-      {
-        "label": "Services",
-        "target": "#services"
-      },
-      {
-        "label": "Projects",
-        "target": "#projects"
-      },
-      {
-        "label": "How I work",
-        "target": "#process"
-      },
-      {
-        "label": "Tools",
-        "target": "#skills"
-      },
-      {
-        "label": "About",
-        "target": "#about"
-      }
+      {"label": "Services", "target": "#services"},
+      {"label": "Projects", "target": "#projects"},
+      {"label": "How I work", "target": "#process"},
+      {"label": "Tools", "target": "#skills"},
+      {"label": "About", "target": "#about"}
     ],
-    "cta": {
-      "label": "Contact",
-      "target": "#contact"
-    }
+    "cta": {"label": "Let's work", "target": "#contact"}
   },
   "hero": {
     "headline": "Naveen",
-    "title": "Data Operations & Data Cleaning",
-    "text": "I help businesses clean, organize and prepare their data for reliable use.",
-    "primaryCta": {
-      "label": "View Projects",
-      "target": "#projects"
-    },
-    "secondaryCta": {
-      "label": "Contact Me",
-      "target": "#contact"
-    },
+    "title": "Freelance Developer & Data Specialist",
+    "text": "I turn messy data into reliable deliverables and build practical backend solutions that businesses can use.",
+    "primaryCta": {"label": "View my work", "target": "#projects"},
+    "secondaryCta": {"label": "Let's work", "target": "#contact"},
     "visual": {
       "enabled": true,
-      "title": "Animation of scattered, messy data cells being organized into a clean, consistent table",
+      "title": "Animated illustration of messy data being organized into a clean deliverable",
       "columns": 5,
       "rows": 8,
       "seed": 11,
       "stageDuration": 1600,
       "replayLabel": "Replay",
-      "stageGroupLabel": "Cleaning stages",
-      "caption": "Illustration only. No real data is shown.",
+      "stageGroupLabel": "Workflow stages",
+      "caption": "Fictional / masked illustration only. No client data is shown.",
       "stages": [
-        {
-          "label": "Raw",
-          "caption": "Mixed formats, repeated records and gaps."
-        },
-        {
-          "label": "Clean",
-          "caption": "Every field follows one format."
-        },
-        {
-          "label": "Validate",
-          "caption": "Duplicates removed, invalid entries checked."
-        },
-        {
-          "label": "Deliver",
-          "caption": "A clean, structured, usable result."
-        }
+        {"label": "Raw", "caption": "Mixed formats, repeated records and gaps."},
+        {"label": "Clean", "caption": "Fields are standardized and organized."},
+        {"label": "Validate", "caption": "Counts, duplicates and problem values are checked."},
+        {"label": "Deliver", "caption": "A clean, structured result ready to use."}
       ]
     },
     "ticker": [
-      "Excel cleaning",
-      "CSV processing",
-      "Google Sheets reporting",
-      "Duplicate removal",
-      "Standardization",
-      "Missing value checks",
-      "PDF to Excel",
-      "Format conversion"
+      "Excel cleaning", "CSV processing", "Google Sheets", "Data standardization",
+      "Java", "Spring Boot", "REST APIs", "SQL", "Business software"
     ]
   },
   "services": {
     "heading": "Services",
-    "intro": "Spreadsheets and data files often need work before anyone can trust them. These are the three things I do.",
+    "intro": "I focus on clear requirements, clean implementation and a checked final result.",
     "items": [
       {
         "id": "excel-csv-cleaning",
         "title": "Excel / CSV Data Cleaning",
-        "description": "Turn messy spreadsheets and exports into consistent, reliable datasets.",
+        "description": "Clean messy spreadsheet exports and prepare consistent, usable datasets.",
         "icon": "table",
-        "features": [
-          "Remove duplicates",
-          "Standardize fields",
-          "Identify missing data",
-          "Normalize formatting",
-          "Prepare clean datasets"
-        ]
+        "features": ["Remove duplicates", "Standardize fields", "Identify missing or invalid values", "Normalize formatting", "Prepare the final dataset"]
       },
       {
         "id": "google-sheets-processing",
-        "title": "Google Sheets Data Processing & Reporting",
-        "description": "Organize data in Google Sheets and prepare clear summaries you can act on.",
+        "title": "Google Sheets Processing",
+        "description": "Organize and structure spreadsheet data so it is easier to review, share and use.",
         "icon": "chart",
-        "features": [
-          "Organize and structure raw sheet data",
-          "Clean and standardize columns",
-          "Build summary tables and reports",
-          "Prepare data for sharing with your team"
-        ]
+        "features": ["Clean and structure columns", "Standardize values", "Create summary tables", "Prepare hand-off sheets"]
       },
       {
         "id": "data-conversion",
-        "title": "PDF / CSV / Excel Data Conversion & Organization",
-        "description": "Move data between formats and organize it into a structure that is ready to use.",
+        "title": "PDF / CSV / Excel Conversion",
+        "description": "Move tabular data between formats and organize the result into a practical spreadsheet structure.",
         "icon": "convert",
-        "features": [
-          "Convert PDF tables to Excel or CSV",
-          "Convert between CSV and Excel formats",
-          "Organize converted data into clean columns",
-          "Check the result against the source"
-        ]
+        "features": ["PDF tables to Excel/CSV", "CSV ↔ Excel conversion", "Column cleanup", "Result checks against the source"]
+      },
+      {
+        "id": "backend-api-development",
+        "title": "Backend & REST API Development",
+        "description": "Build practical backend services with Java, Spring Boot, SQL and REST APIs as the software portfolio grows.",
+        "icon": "layers",
+        "features": ["Spring Boot APIs", "REST endpoints", "MySQL / SQL data access", "Validation and business logic", "Integration-ready services"]
       }
     ]
   },
   "projects": {
-    "heading": "Projects",
-    "intro": "Each case study shows the raw data, the work done and the final result. Every project is labeled by type, so you always know whether it is client work or a self-initiated demo.",
+    "heading": "Selected work",
+    "intro": "A growing portfolio of freelance-ready data work and backend projects. Each case study shows its type and status clearly.",
     "showOnlyFeatured": false,
     "items": [
       {
@@ -160,90 +96,82 @@
         "projectType": "Self-initiated demo project",
         "status": "completed",
         "featured": true,
-        "shortDescription": "Cleaned and standardized a sample customer dataset of about 5,250 records.",
-        "description": "Cleaned and standardized a sample customer dataset containing approximately 5,250 records.",
+        "shortDescription": "Cleaned and standardized a sample customer workbook of about 5,250 records.",
+        "description": "A portfolio exercise based on a messy customer workbook covering duplicate removal, capitalization, phone/email/date standardization, missing-data checks and a final quality summary.",
         "disclosure": "This is a self-initiated demo project built on a sample dataset. It is not client work.",
-        "problem": "Raw customer data is rarely ready to use. Records repeat, names, phone numbers, cities and dates follow different formats, and some emails or values are invalid or missing. That makes the data hard to filter, count or report on.",
-        "objective": "Turn the raw file into one consistent dataset that can be filtered, summarized and reused, with every problem record clearly identified.",
+        "problem": "The raw workbook contained repeated records, inconsistent text and phone formats, mixed date formats, invalid emails and missing information.",
+        "objective": "Turn the raw workbook into one consistent dataset that is easier to filter, summarize and reuse, while clearly identifying problem records.",
         "workPerformed": [
           "Duplicate removal",
-          "Name standardization",
+          "Name capitalization and text standardization",
           "Phone standardization",
-          "Email normalization",
-          "Invalid email identification",
-          "Missing value identification",
+          "Email normalization and invalid-email checks",
+          "Missing-value identification",
           "City standardization",
           "Date standardization",
           "Data status classification",
           "Summary reporting"
         ],
         "process": [
-          {
-            "title": "Review the raw file",
-            "description": "Look through the raw data to find the formatting problems, repeated records and gaps."
-          },
-          {
-            "title": "Standardize the fields",
-            "description": "Make names, phone numbers, emails, cities and dates follow one consistent format."
-          },
-          {
-            "title": "Identify problem records",
-            "description": "Find duplicates, invalid emails and missing values."
-          },
-          {
-            "title": "Classify and summarize",
-            "description": "Add a Data_Status value to each record and report the summary metrics."
-          }
+          {"title": "Review", "description": "Understand the raw structure, requirements and obvious data-quality issues."},
+          {"title": "Clean", "description": "Standardize fields, remove duplicates and normalize formatting."},
+          {"title": "Validate", "description": "Check counts, invalid values, missing information and final consistency."},
+          {"title": "Deliver", "description": "Provide a clean structured workbook with a clear summary of the work."}
         ],
-        "tools": [
-          "Microsoft Excel"
-        ],
-        "tags": [
-          "Excel",
-          "Data cleaning",
-          "Standardization",
-          "Deduplication",
-          "Reporting"
-        ],
+        "tools": ["Microsoft Excel"],
+        "tags": ["Excel", "Data cleaning", "Standardization", "Deduplication", "Validation", "Reporting"],
         "results": [
-          "A cleaned customer dataset with standardized names, phone numbers, emails, cities and dates",
-          "Duplicate records removed",
-          "Invalid emails and missing values identified",
-          "A Data_Status value for every record",
-          "A summary of the cleaning metrics"
+          "Approximately 5,250 source records reviewed",
+          "250 duplicate records removed",
+          "284 invalid emails identified",
+          "934 records with missing information identified",
+          "5,000 final clean records",
+          "A summary sheet prepared for review"
         ],
         "metrics": [
-          {
-            "label": "Customer records",
-            "value": "~5,250"
-          }
+          {"label": "Source records", "value": "5,250"},
+          {"label": "Duplicates removed", "value": "250"},
+          {"label": "Invalid emails", "value": "284"},
+          {"label": "Final clean records", "value": "5,000"}
         ],
         "images": {
-          "thumbnail": {
-            "src": "assets/projects/customer-data-cleaning/thumbnail-placeholder.svg",
-            "alt": "Preview of the cleaned customer dataset in a spreadsheet",
-            "width": 1600,
-            "height": 1000
-          },
-          "before": {
-            "src": "assets/projects/customer-data-cleaning/raw-placeholder.svg",
-            "alt": "Raw customer data before cleaning, with inconsistent formatting",
-            "width": 1600,
-            "height": 900,
-            "blur": true
-          },
-          "after": {
-            "src": "assets/projects/customer-data-cleaning/cleaned-placeholder.svg",
-            "alt": "Cleaned customer data with standardized fields and a Data_Status column",
-            "width": 1600,
-            "height": 900
-          },
-          "summary": {
-            "src": "assets/projects/customer-data-cleaning/summary-placeholder.svg",
-            "alt": "Summary sheet with the cleaning metrics",
-            "width": 1600,
-            "height": 900
-          }
+          "thumbnail": {"src": "assets/projects/customer-data-cleaning/thumbnail-placeholder.svg", "alt": "Fictional spreadsheet illustration for the customer data cleaning project", "width": 1600, "height": 1000},
+          "before": {"src": "assets/projects/customer-data-cleaning/raw-placeholder.svg", "alt": "Masked fictional raw data illustration", "width": 1600, "height": 900, "blur": true},
+          "after": {"src": "assets/projects/customer-data-cleaning/cleaned-placeholder.svg", "alt": "Masked fictional cleaned data illustration", "width": 1600, "height": 900},
+          "summary": {"src": "assets/projects/customer-data-cleaning/summary-placeholder.svg", "alt": "Illustration of the project summary metrics", "width": 1600, "height": 900}
+        },
+        "gallery": [],
+        "demoVideoUrl": "",
+        "githubUrl": "",
+        "liveDemoUrl": ""
+      },
+      {
+        "id": "backend-api-development-track",
+        "title": "Backend & API Development",
+        "category": "Backend Development",
+        "projectType": "Development track",
+        "status": "in-progress",
+        "featured": true,
+        "shortDescription": "Java + Spring Boot backend work focused on REST APIs, SQL and business-logic services.",
+        "description": "The next technical track in the portfolio. Completed client-ready backend and business-software projects will be added here as they are finished.",
+        "disclosure": "This is an in-progress development track, not a completed client project.",
+        "problem": "Businesses need reliable backend services that handle validation, data access and business rules cleanly.",
+        "objective": "Build practical backend projects that demonstrate API design, database integration and maintainable business logic.",
+        "workPerformed": ["Design REST endpoints", "Implement Java and Spring Boot services", "Connect applications to SQL databases", "Add validation and business logic", "Document and test APIs"],
+        "process": [
+          {"title": "Plan", "description": "Define the data model, API contract and business rules."},
+          {"title": "Build", "description": "Implement the Spring Boot services, controllers and database layer."},
+          {"title": "Validate", "description": "Test inputs, outputs, edge cases and database operations."},
+          {"title": "Deliver", "description": "Publish the completed project with code, documentation and a usable demo when available."}
+        ],
+        "tools": ["Java", "Spring Boot", "SQL", "MySQL", "REST APIs"],
+        "tags": ["Java", "Spring Boot", "REST API", "SQL", "MySQL", "Backend"],
+        "results": ["Backend projects will be added as they reach a client-ready state."],
+        "metrics": [],
+        "images": {
+          "thumbnail": {"src": "assets/projects/backend-api-development-track/placeholder.svg", "alt": "Illustration of REST API endpoints and SQL data access", "width": 1600, "height": 1000},
+          "before": {"src": "assets/projects/backend-api-development-track/placeholder.svg", "alt": "Backend project illustration", "width": 1600, "height": 900},
+          "after": {"src": "assets/projects/backend-api-development-track/placeholder.svg", "alt": "Backend API illustration", "width": 1600, "height": 900}
         },
         "gallery": [],
         "demoVideoUrl": "",
@@ -253,122 +181,60 @@
     ]
   },
   "process": {
-    "heading": "How I work",
-    "intro": "A simple process that keeps the work predictable and easy to check.",
+    "heading": "A clear process",
+    "intro": "I keep the workflow simple: understand the requirement, do the work carefully, validate the result and deliver what was agreed.",
     "steps": [
-      {
-        "title": "Understand",
-        "description": "Understand the client's file and requirements."
-      },
-      {
-        "title": "Clean",
-        "description": "Standardize, organize and process the data."
-      },
-      {
-        "title": "Validate",
-        "description": "Check duplicates, missing values and invalid information."
-      },
-      {
-        "title": "Deliver",
-        "description": "Provide a clean, structured and usable final result."
-      }
+      {"title": "Understand", "description": "Confirm the source, required output, rules and important edge cases."},
+      {"title": "Build", "description": "Clean the data or implement the backend work using a structured workflow."},
+      {"title": "Validate", "description": "Check counts, data quality, logic and the final output before delivery."},
+      {"title": "Deliver", "description": "Hand over a clean result with the important changes and next steps clearly documented."}
     ]
   },
   "skills": {
-    "heading": "Tools and skills",
-    "intro": "What I use for data work today.",
+    "heading": "Tools and capabilities",
+    "intro": "A practical stack covering current data work and the backend direction of the portfolio.",
     "items": [
-      {
-        "name": "Microsoft Excel",
-        "group": "Tools"
-      },
-      {
-        "name": "Google Sheets",
-        "group": "Tools"
-      },
-      {
-        "name": "CSV Data Processing",
-        "group": "Tools"
-      },
-      {
-        "name": "Data Cleaning",
-        "group": "Data work"
-      },
-      {
-        "name": "Data Standardization",
-        "group": "Data work"
-      },
-      {
-        "name": "Data Reporting",
-        "group": "Data work"
-      }
+      {"name": "Microsoft Excel", "group": "Data work"},
+      {"name": "Google Sheets", "group": "Data work"},
+      {"name": "CSV Processing", "group": "Data work"},
+      {"name": "Data Cleaning", "group": "Data work"},
+      {"name": "Data Standardization", "group": "Data work"},
+      {"name": "Java", "group": "Backend"},
+      {"name": "Spring Boot", "group": "Backend"},
+      {"name": "REST APIs", "group": "Backend"},
+      {"name": "SQL / MySQL", "group": "Backend"}
     ]
   },
-  "testimonials": {
-    "heading": "Client feedback",
-    "intro": "",
-    "items": []
-  },
-  "experience": {
-    "heading": "Experience",
-    "intro": "",
-    "items": []
-  },
+  "testimonials": {"heading": "Client feedback", "intro": "", "items": []},
+  "experience": {"heading": "Experience", "intro": "", "items": []},
   "about": {
-    "heading": "About",
+    "heading": "I take messy inputs and turn them into dependable deliverables.",
     "paragraphs": [
-      "I'm Naveen, an aspiring software developer and freelance data operations specialist. I work on data cleaning, organization and business-ready reporting while continuing to build deeper expertise in backend development with Java and Spring Boot."
+      "I'm Naveen, a freelance developer working across data operations and backend development. I take ownership of the work from requirements through validation and delivery.",
+      "For data projects, I focus on practical cleanup, standardization, quality checks and business-ready outputs. On the software side, I build with Java, Spring Boot, SQL and REST APIs, with a focus on clear structure and maintainable implementation.",
+      "I work with a straightforward principle: understand what needs to be delivered, build it carefully, validate it before handoff and communicate clearly throughout the project."
     ],
-    "facts": [],
-    "image": {
-      "src": "",
-      "alt": ""
-    }
+    "facts": [
+      {"label": "Current focus", "value": "Data operations + backend development"},
+      {"label": "Backend stack", "value": "Java · Spring Boot · SQL · REST"},
+      {"label": "Working style", "value": "Clear requirements · checked delivery"}
+    ],
+    "image": {"src": "", "alt": ""}
   },
   "contact": {
-    "heading": "Contact",
-    "intro": "Send me the file you need cleaned, or describe what it looks like and what you need to do with it. I'll reply with how I would approach it.",
-    "email": "your-email@example.com",
-    "emailButtonLabel": "Send an email",
-    "emailSubject": "Data cleaning project"
+    "heading": "Let's build something useful.",
+    "intro": "Send the file, project requirement or API idea. Include the expected output and any deadline or constraints, and I'll reply with the next step.",
+    "email": "naveenchandar021@gmail.com",
+    "emailButtonLabel": "Email me",
+    "emailSubject": "Freelance project inquiry"
   },
   "social": [
-    {
-      "id": "upwork",
-      "label": "Upwork",
-      "url": "https://www.upwork.com/freelancers/~017933f57f6a273739",
-      "handle": "View my profile",
-      "showInContact": true,
-      "showInFooter": true
-    },
-    {
-      "id": "fiverr",
-      "label": "Fiverr",
-      "url": "",
-      "handle": "View my gigs",
-      "showInContact": false,
-      "showInFooter": false
-    },
-    {
-      "id": "linkedin",
-      "label": "LinkedIn",
-      "url": "",
-      "handle": "Connect with me",
-      "showInContact": false,
-      "showInFooter": false
-    },
-    {
-      "id": "github",
-      "label": "GitHub",
-      "url": "https://github.com/naveenchandar7",
-      "handle": "See my code",
-      "showInContact": true,
-      "showInFooter": true
-    }
+    {"id": "upwork", "label": "Upwork", "url": "https://www.upwork.com/freelancers/~017933f57f6a273739", "handle": "View my profile", "showInContact": true, "showInFooter": true},
+    {"id": "fiverr", "label": "Fiverr", "url": "", "handle": "View my gigs", "showInContact": false, "showInFooter": false},
+    {"id": "linkedin", "label": "LinkedIn", "url": "", "handle": "Connect with me", "showInContact": false, "showInFooter": false},
+    {"id": "github", "label": "GitHub", "url": "https://github.com/naveenchandar7", "handle": "See my code", "showInContact": true, "showInFooter": true}
   ],
-  "footer": {
-    "text": "© {year} Naveen"
-  },
+  "footer": {"text": "© {year} Naveen · Data Operations · Backend Development · APIs"},
   "labels": {
     "skipToContent": "Skip to content",
     "nav.label": "Main",
