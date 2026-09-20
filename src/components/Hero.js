@@ -17,7 +17,7 @@ function ctaButton(cta, variant = '') {
 export function renderHero(data) {
   const hero = data.hero;
   const showVisual = hero.visual && hero.visual.enabled;
-  const nameParts = String(hero.headline || 'Naveen').trim().split(/s+/);
+  const nameParts = String(hero.headline || 'Naveen').trim().split(/\s+/);
   const firstName = nameParts.shift() || 'Naveen';
   const restName = nameParts.join(' ');
 
