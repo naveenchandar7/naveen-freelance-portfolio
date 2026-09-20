@@ -1,9 +1,8 @@
 import { h, has, externalAttrs } from '../utils/dom.js';
 import { icon } from '../utils/icons.js';
 import { label } from '../store.js';
-import { section, sectionHeader } from './SectionHeader.js';
+import { section } from './SectionHeader.js';
 
-/** Social/contact links are read from data.social. Empty URLs are skipped. */
 export function contactLinks(data, where) {
   const flag = where === 'footer' ? 'showInFooter' : 'showInContact';
   return (data.social || []).filter((item) => has(item.url) && item[flag] !== false);
@@ -17,43 +16,80 @@ export function mailtoUrl(contact) {
 export function renderContact(data) {
   const cfg = data.contact;
   const hasEmail = has(cfg.email);
-  const links = contactLinks(data, 'contact');
-  if (!hasEmail && !links.length) return null;
+  const social = (data.social || []).filter((item) => has(item.url) && ['upwork', 'fiverr', 'github'].includes(item.id));
+  if (!hasEmail && !social.length) return null;
 
-  const rows = links.map((item) =>
-    h(
-      'li',
-      {},
-      h(
-        'a',
-        { class: 'contact-row glow', href: item.url, ...externalAttrs(item.url) },
-        h('span', { class: 'contact-row__label' }, item.label),
-        h('span', { class: 'contact-row__value' }, item.handle || item.url.replace(/^https?:\/\//, '')),
-        icon('external')
-      )
-    )
-  );
+  const mainLinks = social.filter((item) => item.id !== 'fiverr');
+  const miniLinks = social.filter((item) => item.id === 'upwork' || item.id === 'fiverr');
 
   return section(
     'contact',
-    sectionHeader('contact', cfg),
+    null,
     h(
       'div',
-      { class: 'contact', 'data-reveal': '' },
-      hasEmail
-        ? h(
-            'a',
-            { class: 'contact__mail', href: mailtoUrl(cfg), 'aria-label': `${cfg.emailButtonLabel || label('contact.email')}: ${cfg.email}` },
-            h('span', { class: 'contact__cta' }, cfg.emailButtonLabel || label('contact.email')),
+      { class: 'contact contact--closing' },
+      h(
+        'div',
+        { class: 'contact__closing-top' },
+        h(
+          'div',
+          { class: 'contact__closing-copy' },
+          h('span', { class: 'contact__kicker' }, '05 — CONTACT'),
+          h(
+            'h2',
+            { class: 'contact__closing-title', id: 'contact-title' },
+            h('span', {}, 'Have a messy dataset?'),
+            h('span', { class: 'contact__closing-accent' }, 'Let’s clean it up.')
+          ),
+          h(
+            'p',
+            { class: 'contact__closing-text' },
+            'Send me the task, expected output and any rules you need followed. I’ll review the requirement and work toward a clean, structured result.'
+          )
+        ),
+        h(
+          'div',
+          { class: 'contact__closing-actions' },
+          hasEmail
+            ? h(
+                'a',
+                { class: 'contact__closing-btn contact__closing-btn--primary', href: mailtoUrl(cfg) },
+                h('span', {}, 'Email me'),
+                icon('arrow-up-right')
+              )
+            : null,
+          mainLinks.map((item) =>
             h(
-              'span',
-              { class: 'contact__email-card' },
-              h('span', { class: 'contact__email-address' }, cfg.email),
-              icon('arrow-right')
+              'a',
+              { class: 'contact__closing-btn contact__closing-btn--ghost', href: item.url, ...externalAttrs(item.url) },
+              h('span', {}, item.label),
+              icon('external')
             )
           )
-        : null,
-      rows.length ? h('ul', { class: 'contact__list', role: 'list', 'aria-label': label('contact.other') }, rows) : null
+        )
+      ),
+      h(
+        'div',
+        { class: 'contact__closing-bar' },
+        h('span', {}, `© ${new Date().getFullYear()} Naveen`),
+        h(
+          'div',
+          { class: 'contact__closing-links' },
+          miniLinks.map((item) =>
+            h(
+              'a',
+              { href: item.url, ...externalAttrs(item.url) },
+              item.label
+            )
+          )
+        ),
+        h(
+          'a',
+          { href: '#top', class: 'contact__backtop' },
+          h('span', {}, 'Back to top'),
+          icon('arrow-up')
+        )
+      )
     )
   );
 }
