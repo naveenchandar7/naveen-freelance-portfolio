@@ -791,3 +791,30 @@ html,body{
     max-width:100%!important;
   }
 }
+
+
+/* Ticker: continuous center-line motion, including on touch devices. */
+.ticker__track{
+  display:flex!important;
+  width:max-content!important;
+  min-width:max-content!important;
+  animation:tickerMarquee 24s linear infinite!important;
+  will-change:transform!important;
+  transform:translate3d(0,0,0)!important;
+}
+.ticker__list{
+  flex:0 0 auto!important;
+}
+@keyframes tickerMarquee{
+  from{transform:translate3d(0,0,0)}
+  to{transform:translate3d(-50%,0,0)}
+}
+.ticker:hover .ticker__track{animation-play-state:paused!important}
+@media (max-width:899px){
+  .ticker__track{animation-duration:20s!important}
+  .ticker__item{
+    padding-right:1rem!important;
+    gap:1rem!important;
+    font-size:.72rem!important;
+  }
+}
