@@ -254,3 +254,99 @@ body, #app { color: var(--ink) !important; }
   .section__title { font-size: clamp(1.75rem, 9vw, 2.25rem) !important; }
   .section { padding-block: 4rem !important; }
 }
+
+
+/* ---- compact professional content pass ------------------------------ */
+.about__text{
+  font-size:clamp(1.02rem,1.45vw,1.22rem)!important;
+  line-height:1.75!important;
+  font-weight:500!important;
+  max-width:58ch!important;
+}
+.about__body{gap:1.1rem!important}
+.about .section__title{font-size:clamp(1.8rem,3vw,2.45rem)!important}
+.facts{margin-top:.5rem!important;padding-top:1.1rem!important;gap:.8rem 1.5rem!important}
+.facts dt{font-size:.72rem!important}
+.facts dd{font-size:.84rem!important;color:#b7c3d5!important}
+
+/* Small, dark chips for project tools/tags. */
+.tag,.tags--small .tag{
+  background:#101827!important;
+  border:1px solid rgba(99,179,237,.22)!important;
+  color:#b7c3d5!important;
+}
+.tag:hover,.tags--small .tag:hover{
+  background:rgba(0,212,255,.08)!important;
+  border-color:var(--accent)!important;
+  color:var(--accent)!important;
+}
+.badge{
+  background:rgba(255,255,255,.025)!important;
+  color:#9aa8bb!important;
+  border-color:rgba(99,179,237,.22)!important;
+}
+.badge--status{
+  background:rgba(34,211,162,.07)!important;
+  color:var(--mint)!important;
+  border-color:rgba(34,211,162,.45)!important;
+}
+
+/* Compact contact email: no giant mail address. */
+.contact__mail{
+  padding:0 0 1.15rem!important;
+  border-bottom:1px solid var(--line)!important;
+}
+.contact__cta{
+  display:block!important;
+  margin-bottom:.65rem!important;
+  color:#8290a7!important;
+  font-size:.76rem!important;
+  text-transform:uppercase;
+  letter-spacing:.14em;
+}
+.contact__email-card{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:1rem!important;
+  width:min(100%,680px)!important;
+  padding:.9rem 1rem!important;
+  border:1px solid rgba(99,179,237,.18)!important;
+  border-radius:12px!important;
+  background:rgba(14,18,32,.76)!important;
+  color:#dce5f1!important;
+  transition:transform .25s var(--ease),border-color .25s,background .25s!important;
+}
+.contact__email-address{
+  font:600 .95rem/1.4 var(--font-mono)!important;
+  overflow-wrap:anywhere;
+}
+.contact__email-card .icon{color:var(--accent)!important;transition:transform .25s var(--ease)!important}
+.contact__mail:hover .contact__email-card{
+  transform:translateY(-2px)!important;
+  border-color:var(--line-strong)!important;
+  background:rgba(14,18,32,.96)!important;
+}
+.contact__mail:hover .contact__email-card .icon{transform:translateX(4px)!important}
+.contact__address{display:none!important}
+
+/* Footer: quiet navigation, not another content section. */
+.footer{
+  padding:1.25rem 0 1rem!important;
+  background:#060912!important;
+}
+.footer__inner{
+  gap:.6rem 1rem!important;
+  align-items:center!important;
+}
+.footer__text,.footer__links a,.footer__top{
+  font-size:.7rem!important;
+  color:#6f7c90!important;
+}
+.footer__links{gap:.5rem 1rem!important}
+.footer__top{padding:.2rem 0!important}
+.footer__mark{
+  margin-top:.75rem!important;
+  font-size:clamp(3rem,10vw,7rem)!important;
+  -webkit-text-stroke:1px rgba(99,179,237,.08)!important;
+}
