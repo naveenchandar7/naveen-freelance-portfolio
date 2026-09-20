@@ -149,3 +149,108 @@ body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opa
 @media (min-width:1000px){.hero__inner{gap:4rem}}
 @media (max-width:760px){.hero__inner{padding-top:2.4rem}.hero__name{font-size:clamp(2.7rem,13vw,4.1rem)}.section{padding-block:4.4rem}}
 @media (prefers-reduced-motion:reduce){body::before,.hero::before,.hero::after,.hero__grid,.sorter{animation:none!important}}
+
+
+/* ---- readability + proportion pass -------------------------------- */
+body, #app { color: var(--ink) !important; }
+.nav__inner {
+  background: rgba(6,9,18,.86) !important;
+  border-color: var(--line) !important;
+  box-shadow: 0 14px 34px -24px rgba(0,0,0,.65) !important;
+}
+.nav.is-scrolled .nav__inner,
+.nav.is-open .nav__inner {
+  background: rgba(6,9,18,.96) !important;
+  border-color: var(--line-strong) !important;
+}
+.nav__brand { color: var(--white) !important; }
+.nav__link { color: #aeb9cb !important; }
+.nav__link:hover,
+.nav__link[aria-current="true"] { color: var(--white) !important; }
+
+.hero__name {
+  font-size: clamp(2.55rem, 5.4vw, 4.15rem) !important;
+  line-height: 1 !important;
+}
+.hero__role {
+  font-size: clamp(.95rem, 1.55vw, 1.2rem) !important;
+  color: var(--white) !important;
+}
+.hero__text {
+  color: #b7c3d5 !important;
+  font-size: .96rem !important;
+  line-height: 1.75 !important;
+}
+.hero__title { gap: .6rem !important; }
+
+.section { padding-block: clamp(4rem, 6vw, 5.8rem) !important; }
+.section__head {
+  margin-bottom: clamp(1.9rem, 3.2vw, 2.7rem) !important;
+}
+.section__title {
+  font-size: clamp(1.85rem, 3.45vw, 2.65rem) !important;
+  line-height: 1.08 !important;
+}
+.section__intro {
+  color: #aeb9cb !important;
+  font-size: .92rem !important;
+  line-height: 1.7 !important;
+}
+
+/* Keep workflow heading deliberately compact instead of making it a poster headline. */
+#process .section__title {
+  font-size: clamp(1.7rem, 3vw, 2.25rem) !important;
+}
+#process .section__intro {
+  max-width: 55ch !important;
+}
+.step__title { font-size: 1.12rem !important; }
+.step__text { color: #aeb9cb !important; font-size: .9rem !important; }
+
+.service__title,
+.project-card__title,
+.timeline__title { color: var(--white) !important; }
+.service__text,
+.project-card__text,
+.step__text,
+.timeline__org { color: #aeb9cb !important; }
+
+.about__text {
+  font-size: clamp(1.35rem, 2.65vw, 2.05rem) !important;
+  line-height: 1.35 !important;
+  color: var(--white) !important;
+  max-width: 28ch !important;
+}
+.word { color: rgba(203,213,225,.24) !important; }
+.word.is-lit { color: var(--white) !important; }
+.facts dt { color: #8290a7 !important; }
+.facts dd { color: #d7deea !important; font-size: .93rem !important; }
+
+.contact__cta,
+.contact__address,
+.contact-row__value { color: var(--white) !important; }
+.contact__cta { font-size: .92rem !important; }
+.contact__address {
+  font-size: clamp(1.55rem, 4vw, 3rem) !important;
+}
+.contact-row__label { color: #8290a7 !important; }
+.contact-row__value { font-size: .92rem !important; }
+
+.ticker__item {
+  font-size: .72rem !important;
+  color: #aeb9cb !important;
+}
+
+.badge,
+.project-card__category,
+.service__cta,
+.project-card__link,
+.tag { font-size: .78rem !important; }
+
+.section__head .mask__in { letter-spacing: -.03em; }
+
+@media (max-width: 760px) {
+  .hero__name { font-size: clamp(2.45rem, 12vw, 3.4rem) !important; }
+  .section__title { font-size: clamp(1.75rem, 9vw, 2.25rem) !important; }
+  .section { padding-block: 4rem !important; }
+}
